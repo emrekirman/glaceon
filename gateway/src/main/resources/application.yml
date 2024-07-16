@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/glaceon_gateway}
+    #    url: jdbc:postgresql://localhost:5432/crm_test
+    username: postgres
+    password: 98836
+  jpa:
+    hibernate:
+      ddl-auto: none
+  flyway:
+    enabled: true
+jwt:
+  secret: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
+server:
+  port: 8080
